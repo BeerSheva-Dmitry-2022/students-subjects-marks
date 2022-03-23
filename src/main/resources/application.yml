@@ -1,0 +1,11 @@
+
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://localhost:27017/collegemarks
+       uri: mongodb+srv://root:${MONGO_PASSWORD}@cluster0.gr2eh.mongodb.net/college?retryWrites=true&w=majority
+server:
+  port: 8080
+logging:
+  level: 
+    root: info
