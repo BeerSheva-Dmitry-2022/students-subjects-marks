@@ -30,7 +30,7 @@ import telran.students.service.interfaces.*;
 
 @SpringBootTest
 @AutoConfigureMockMvc
-@TestPropertySource(properties = "spring.mongodb.embedded.version=4.0.2")
+@TestPropertySource(properties = {"spring.mongodb.embedded.version=4.0.2", "app.generation.create=false"})
 //@AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class StudentsSubjectsMarksApplicationTests {
